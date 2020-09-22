@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>[COURSE NAME]</title>
+    <title>Javascript for Beginners - Day One</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -22,14 +22,14 @@
             <a class="nav-link" href="index.html">Course Outline</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="links.html">Handy Links</a>
+            <!-- <a class="nav-link" href="links.html">Handy Links</a> -->
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" role="button" aria-expanded="true">Lessons</a>
             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
               <li><a class="dropdown-item active" href="one.html">Day One</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="final.html">Final Project</a></li>
+              <!-- <li><a class="dropdown-item" href="final.html">Final Project</a></li> -->
             </ul>
           </li>
         </ul>
@@ -40,34 +40,131 @@
   <div class="container padtop3">
     <div class="row">
       <div class="col text-center">
-        <h1>Day #</h1>
+        <h1>Day 1</h1>
       </div>
     </div>
 
-    <div class="row section"><!-- Concepts -->
+    <div class="row section">
       <aside class="col">
         <h2>Concepts</h2>
       </aside>
       <main class="col-9">
         <ul class="points">
           <li>Introductions</li>
+          <li>Intro to Javascript</li>
+          <li>Daily Challenge</li>
+          <li>Syntax</li>
+          <li>The Console</li>
+          <li>Take Home Challenge</li>
         </ul>
       </main>
-    </div><!-- end Concepts -->
+    </div>
 
-    <div class="row section"><!-- Section with code markup -->
+    <div class="row section">
       <aside class="col">
-        <h2>Code</h2>
+        <h2>Intro to Javascript</h2>
       </aside>
       <main class="col-9">
-        <pre class="language-markup">
-          <code class="language-markup">
-            < h1 > Hello World! < / h1 >
-          </code>
-        </pre>
+        <ul class="points">
+          <li><a href="https://skillcrush.com/blog/javascript/" target="_blank">What is Javscript?</a></li>
+          <li>Additional Reading: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction" target="_blank">Mozilla Developer Network - Javascript Introduction</a></li>
+          <li><a href="https://www.w3schools.com/js/js_versions.asp" target="_blank">Javascript Versions</a></li>
+          <ul class="nested-points">
+            <li>Current Version: ECMAScript 6 (2015)</li>
+          </ul>
+          <li>How to use Javscript (3 ways):</li>
+          <ul class="nested-points">
+            <li><b>Inline</b> (not recommended)</li>
+            <pre>
+              <code>&lt;button onclick="confirm('Are you sure?')"&gt;Delete&lt;/button&gt;</code>
+            </pre>
+            <li><b>Internal</b> (sometimes appropriate)</li>
+            <pre>
+              <code>&lt;script&gt;let pageElement = document.getElementById('my-id');&lt;/script&gt;</code>
+            </pre>
+            <li><b>External</b> (preferred method of including JS)</li>
+            <pre>
+              <code>&lt;script src="js/script.js"&gt;&lt;/script&gt;</code>
+            </pre>
+          </ul>
+        </ul>
       </main>
-    </div><!-- end code markup -->
-  </div>
+    </div>
+
+    <div class="row section">
+      <aside class="col">
+        <h2>Daily Challenge</h2>
+      </aside>
+      <main class="col-9">
+        <ul class="points">
+          <li>Go to <a href="https://github.com" target="_blank">github.com</a></li>
+          <li>Create a new repository named javascript-practice</li>
+          <li>Clone your new repository</li>
+          <li>Open your project in Visual Studio Code</li>
+          <li>Add the following files:</li>
+          <ul class="nested-points">
+            <li>index.html</li>
+            <li>js/script.js</li>
+            <li>css/style.css (optional)</li>
+          </ul>
+          <li>Link your script file externally</li>
+          <li>Add, commit and push changes to your master branch</li>
+        </ul>
+      </main>
+    </div>
+
+    <div class="row section">
+      <aside class="col">
+        <h2>Syntax</h2>
+      </aside>
+      <main class="col-9">
+        <ul class="points">
+          <li><a href="https://www.freecodecamp.org/news/the-complete-javascript-handbook-f26b2c71719c/#abriefintrotothesyntaxofjavascript">Syntax Basics</a></li>
+          <ul class="nested-points">
+            <li>White Space</li>
+            <li>Case Sensitivity</li>
+            <li>Comments</li>
+            <li>Semicolons</li>
+          </ul>
+        </ul>
+      </main>
+    </div>
+
+    <div class="row section">
+      <aside class="col">
+        <h2>The Console</h2>
+      </aside>
+      <main class="col-9">
+        <ul class="points">
+          <li>How to find it</li>
+            <li>Open browser > right click > inspect > console</li>
+          <li><a href="https://www.w3schools.com/JSREF/met_console_log.asp" target="_blank">console.log()</a></li>
+        </ul>
+      </main>
+    </div>
+
+    <div class="row section">
+      <aside class="col">
+        <h2>Take Home Challenge</h2>
+      </aside>
+      <main class="col-9">
+        <ul class="points">
+          <li>Using your Daily Challenge repository:</li>
+          <ul class="nested-points">
+            <li>Create a new branch called take-home</li>
+            <li>Add the following to your script file:</li>
+            <ul class="nested-points">
+              <li>Single line comment</li>
+              <li>Multi-line comment</li>
+              <li>Log your name to the console</li>
+              <li>Log your favorite food to the console</li>
+            </ul>
+            <li>Add, commit, and push your changes to your take-home branch</li>
+          </ul>
+        </ul>
+      </main>
+    </div>
+  </div><!-- end Container -->
 
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
