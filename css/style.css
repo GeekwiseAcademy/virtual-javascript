@@ -1,0 +1,279 @@
+/* UNIVERSALS */
+body, html {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+html {
+    background-color: #F7DA4D;
+}
+
+main, aside {
+    font-size: 1.5em;
+}
+
+a {
+    color: #333;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #A52F23;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #A52F23;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+.points {
+    list-style: none;
+    font-size: 1.25em;
+}
+
+ol {
+  font-size: 1.2em;
+}
+
+.nested-points {
+  margin-left: 24px;
+  font-size: 1em;
+}
+
+.bulleted-points {
+    list-style-type: circle;
+}
+
+.dashed-list {
+    list-style-type: square;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.padtop3 {
+  padding-top: 3em;
+}
+
+pre {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.highlight-circle {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid #A52F23;
+    animation: fade-in infinite 3s;
+    padding-left: 4px;
+}
+
+.highlight-block {
+    background-color: yellow;
+    color: #A52F23;
+    animation: fade-in infinite 3s;
+}
+
+.container, .container-fluid {
+    padding-bottom: 160px;
+    min-height: 110vh;
+}
+/* JS HELPERS */
+.header-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    animation: roll-down .2s ease-in;
+    z-index: 10;
+}
+
+.header-relative {
+    position: relative;
+    animation: fade-in .4s ease-in;
+}
+
+.js-link {
+    font-weight: bold
+}
+
+.js-link:hover {
+    cursor: pointer;
+    color: #A52F23;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #eee;
+    padding: .5em;
+}
+
+.logo {
+    margin-left: 5em;
+    background-color: #F7DA4D;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    animation: color-swirl 2s ease-in-out;
+}
+
+.logo a {
+    font-size: 1.75em;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    font-weight: bold;
+}
+
+.navbar-default {
+    background-color: #eee;
+    border: none;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #A52F23;
+}
+
+/* MAIN STYLES */
+.section {
+  margin-bottom: 1.5em;
+}
+
+.section main, .section aside{
+    margin-top: 2em;
+}
+
+aside {
+    color: #A52F23;
+    text-align: center;
+}
+
+aside h2 {
+    margin-top: 0;
+}
+
+.section aside {
+    animation: from-top 1.5s ease-in-out;
+}
+
+.section main {
+    animation: from-right 1.5s ease-in-out;
+}
+
+.title {
+    animation: fade-in 2s ease-in-out;
+    margin-top: 1em;
+}
+
+.fade-1 {
+  animation: fade-in 6.5s ease-in-out infinite;
+  opacity: 0;
+}
+.fade-2 {
+  animation: fade-in 6.5s 4s ease-in-out infinite;
+  opacity: 0;
+}
+.fade-3 {
+  animation: fade-in 6.5s 8s ease-in-out infinite;
+  opacity: 0;
+}
+.fade-4 {
+  animation: fade-in 6.5s 10s ease-in-out infinite;
+  opacity: 0;
+}
+.fade-5 {
+  animation: fade-in 6.5s 12s ease-in-out infinite;
+  opacity: 0;
+}
+.fade-6 {
+  animation: fade-in 6.5s 14s ease-in-out infinite;
+  opacity: 0;
+}
+
+/* TAKE HOME */
+.take-home ul li a {
+    font-weight: bold;
+}
+
+/* ANIMATIONS */
+@keyframes from-top {
+    from {
+        opacity: 0;
+        position: relative;
+        top: -200px;
+        color: #eee;
+    }
+
+    to {
+        opacity: 1;
+        position: relative;
+        top: 0;
+    }
+}
+
+@keyframes from-right {
+    from {
+        opacity: .5;
+        right: -2000px;
+    }
+
+    to {
+        opacity: 1;
+        right: 0;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes color-swirl {
+    from {
+        background-color: #FFFFFF;
+        transform: rotate(0deg);
+    }
+    to {
+        background-color: #F7DA4D;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes roll-down {
+    from {
+        transform: translateY(-85px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
