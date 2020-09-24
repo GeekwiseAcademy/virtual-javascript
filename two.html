@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript for Beginners - Day Two</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo"><a href="index.html"><img class="img-fluid" src="img/geekwise_owl.png" alt="geekwise owl logo"></a></div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Course Outline</a>
+          </li>
+          <li class="nav-item">
+            <!-- <a class="nav-link" href="links.html">Handy Links</a> -->
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" role="button" aria-expanded="true">Lessons</a>
+            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="one.html">Day One</a></li>
+              <li><a class="dropdown-item active" href="two.html">Day Two</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <!-- <li><a class="dropdown-item" href="final.html">Final Project</a></li> -->
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container padtop3">
+    <div class="row">
+      <div class="col text-center">
+        <h1>Day 2</h1>
+      </div>
+    </div>
+
+    <div class="row section">
+      <aside class="col">
+        <h2>Concepts</h2>
+      </aside>
+      <main class="col-9">
+        <ul class="points">
+          <li>Take Home Review</li>
+          <li>Data Types</li>
+          <li>Daily Challenge</li>
+          <li>Variables</li>
+          <li>Operators</li>
+          <!-- <li>Final Project Overview</li> -->
+          <li>Take Home Challenge</li>
+        </ul>
+      </main>
+    </div>
+
+    <div class="row section">
+        <aside class="col">
+          <h2>Take Home Review</h2>
+        </aside>
+        <main class="col-9">
+          <ul class="points">
+            <li>Merge your take-home branch into master</li>
+            <li>Make sure your master branch is up-to-date locally and in Github</li>
+            <li>Questions?</li>
+          </ul>
+        </main>
+      </div>
+
+    <div class="row section">
+      <aside class="col">
+        <h2>Data Types</h2>
+      </aside>
+      <main class="col-9">
+        <ul class="points">
+          <li><a href="https://javascript.info/types" target="_blank">Primitive Data Types</a></li>
+          <ul class="nested-points">
+            <li>Strings</li>
+              <ul class="nested-points">
+                <li>Always wrapped in single quotes or double quotes</li>
+                <li>.length property</li>
+                <li>Concatenation</li>
+                <li>Interpolation</li>
+                <ul class="nested-points">
+                  <li><a href="https://developers.google.com/web/updates/2015/01/ES6-Template-Strings" target="_blank">Template Literals</a></li>
+                </ul>
+              </ul>
+            <li>Numbers</li>
+              <ul class="nested-points">
+                <li>Used for integers and decimal values</li>
+                <li>Infinity</li>
+                <li>NaN</li>
+              </ul>
+            <li>Boolean</li>
+              <ul class="nested-points">
+                <li>True</li>
+                <li>False</li>
+              </ul>
+            <li>Undefined</li>
+              <ul class="nested-points">
+                <li>No value assigned</li>
+              </ul>
+            <li><a href="https://javascript.info/bigint" target="_blank">BigInt</a></li>
+              <ul class="nested-points">
+                <li>Used for integers of longer length than the number data type</li>
+                <li>Created by adding an "n" to the end of an integer</li>
+              </ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/symbol" target="_blank">Symbol</a></li>
+              <ul class="nested-points">
+                <li>Creates anonymous and unique values</li>
+              </ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof" target="_blank">typeof</a></li>
+          </ul>
+        </ul>
+      </main>
+    </div>
+
+    <div class="row section">
+      <aside class="col">
+        <h2>Daily Challenge</h2>
+      </aside>
+      <main class="col-9">
+        <ul class="points">
+          <li>In your js-practice repository:</li>
+          <ul class="nested-points">
+              <li>Create a new branch named day-2</li>
+              <li>Using the .length property, console log the number of letters in “Supercalifragilisticexpialidocious”</li>
+              <li>Console log any number</li>
+              <li>Console log a BigInt</li>
+              <li>Hint: Use typeof to confirm your number and BigInt values</li>
+              <li>Add, commit, and push to your day-2 branch</li>
+          </ul>
+        </ul>
+      </main>
+    </div>
+
+    <div class="row section">
+      <aside class="col">
+        <h2>Daily Challenge Review</h2>
+      </aside>
+      <main class="col-9">
+        <ul class="points">
+        <li>Questions?</li>
+        </ul>
+      </main>
+    </div>
+
+    <div class="row section">
+      <aside class="col">
+          <h2>Variables</h2>
+      </aside>
+      <main class="col-9">
+          <ul class="points">
+            <li>var - used in previous JS versions</li>
+            <li>let - declared values can be reassigned</li>
+            <li>const - declared values can not be reassigned</li>
+            <li><a href="https://www.dummies.com/web-design-development/javascript/naming-javascript-variables/">Naming Javascript Variables</a></li>
+            <li><a href="https://www.freecodecamp.org/news/what-is-variable-hoisting-differentiating-between-var-let-and-const-in-es6-f1a70bb43d/" target="_blank">Hoisting</a></li>
+          </ul>
+      </main>
+    </div>
+
+    <div class="row section">
+      <aside class="col">
+        <h2>Operators</h2>
+      </aside>
+      <main class="col-9">
+        <ul class="points">
+            <li>Assignment</li>
+            <ul class="nested-points">
+              <li><code>=</code> assignment</li>
+              <li><code>+=</code> addition assignment</li>
+              <li><code>-=</code> subtraction assignment</li>
+              <li><code>*=</code> multiplication assignment</li>
+              <li><code>/=</code> division assignment</li>
+            </ul>
+            <li>Arithmetic</li>
+            <ul class="nested-points">
+              <li><code>+</code> addition</li>
+              <li><code>-</code> subtraction</li>
+              <li><code>*</code> multiplication</li>
+              <li><code>/</code> division</li>
+              <li><code>%</code> modulo</li>
+            </ul>
+        </ul>
+      </main>
+    </div>
+
+    <!-- <div class="row section">
+      <aside class="col">
+        <h2>Final Project Overview</h2>
+      </aside>
+      <main class="col-9">
+        <ul class="points">
+          <li><a href="final.html">View Final Project Details</a></li>
+        </ul>
+      </main>
+    </div> -->
+
+    <div class="row section">
+      <aside class="col">
+        <h2>Take Home Challenge</h2>
+      </aside>
+      <main class="col-9">
+        <ul class="points">
+          <li>Directions for the take home can be found in this Codepen: <a href="https://codepen.io/GeekwiseAcademy/pen/eYZxeaN" target="_blank">Mad Libs Challenge*</a></li>
+          <li>*<em>If you want to save your work, you will need to create a free codepen account</em></li>
+        </ul>
+      </main>
+    </div>
+  </div><!-- end Container -->
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
