@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Javascript for Beginners - Day Three</title>
+    <title>Javascript for Beginners - Day Four</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -29,8 +29,8 @@
             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
               <li><a class="dropdown-item" href="one.html">Day One</a></li>
               <li><a class="dropdown-item" href="two.html">Day Two</a></li>
-              <li><a class="dropdown-item active" href="three.html">Day Three</a></li>
-              <li><a class="dropdown-item" href="four.html">Day Four</a></li>
+              <li><a class="dropdown-item" href="three.html">Day Three</a></li>
+              <li><a class="dropdown-item active" href="four.html">Day Four</a></li>
               <li><hr class="dropdown-divider"></li>
               <!-- <li><a class="dropdown-item" href="final.html">Final Project</a></li> -->
             </ul>
@@ -43,7 +43,7 @@
   <div class="container padtop3">
     <div class="row">
       <div class="col text-center">
-        <h1>Day 3</h1>
+        <h1>Day 4</h1>
       </div>
     </div>
 
@@ -54,11 +54,10 @@
       <main class="col-9">
         <ul class="points">
           <li>Take Home Review</li>
-          <li>String Methods</li>
-          <li>Pop Up Methods</li>
+          <li>Control FLow</li>
           <li>Daily Challenge</li>
-          <li>Math Properties</li>
-          <li>Date Object</li>
+          <li>Edge Cases</li>
+          <li>Debugging</li>
           <li>Take Home Challenge</li>
         </ul>
       </main>
@@ -77,23 +76,47 @@
 
     <div class="row section">
       <aside class="col">
-        <h2>String Methods</h2>
+        <h2>Control Flow</h2>
       </aside>
       <main class="col-9">
         <ul class="points">
-          <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Useful_string_methods" target="_blank">MDN: Useful String Methods</a></li> 
-          <li><a href="https://medium.com/@luke_smaki/javascript-es6-template-literals-and-new-string-methods-2ed479670de9" target="_blank">New in ES6</a></li>
-        </ul>
-      </main>
-    </div>
-
-    <div class="row section">
-      <aside class="col">
-        <h2>Pop Up Methods</h2>
-      </aside>
-      <main class="col-9">
-        <ul class="points">
-          <li><a href="https://www.w3schools.com/js/js_popup.asp" target="_blank">alert(), confirm(), and prompt()</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else" target="_blank">If / Else Statements</a></li>
+          <ul class="nested-points">
+            <li>Else If</li>
+          </ul>
+          <li>Comparison Operator</li>
+          <ul class="nested-points">
+            <li><code>===</code> strict equal</li>
+            <li><code>!==</code> strict not equal</li>
+            <li><code>></code> greater than</li>
+            <li><code>>=</code> greater than or equal</li>
+            <li><code><</code> less than</li>
+            <li><code><=</code> less than or equal</li>
+          </ul>
+          <li>Truthy and Falsy</li>
+          <ul class="nested-points">
+            <li>Falsy</li>
+            <ul class="nested-points">
+              <li>False</li>
+              <li>0</li>
+              <li>Empty string ""</li>
+              <li>Null</li>
+              <li>Undefined</li>
+              <li>NaN</li>
+            </ul>
+            <li>Truthy</li>
+            <ul class="nested-points">
+              <li>All other values</li>
+            </ul>
+          </ul>
+          <li>Logical Operators</li>
+          <ul class="nested-points">
+            <li><code>&&</code> and</li>
+            <li><code>||</code> or</li>
+            <li><code>!</code> not</li>
+          </ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch" target="_blank">Switch Statements</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator" target="_blank">Ternary Operator</a></li>
         </ul>
       </main>
     </div>
@@ -104,8 +127,7 @@
       </aside>
       <main class="col-9">
         <ul class="points">
-          <li>Complete this <a href="https://codepen.io/GeekwiseAcademy/pen/bGpJXbL?editors=0010" target="_blank">Codepen*</a></li>
-          <li>*<em>If you want to save your work, you will need to create a free codepen account</em></li>
+          <li>Complete this <a href="https://codepen.io/GeekwiseAcademy/pen/MWyMyqe?editors=0010" target="_blank">Codepen</a></li>
         </ul>
       </main>
     </div>
@@ -123,22 +145,22 @@
 
     <div class="row section">
       <aside class="col">
-          <h2>Math Properties</h2>
+          <h2>Edge Cases</h2>
       </aside>
       <main class="col-9">
           <ul class="points">
-            <li><a href="https://www.tutorialspoint.com/es6/es6_math.htm" target="_blank">Full list of properties</a></li>
+            <li><a href="https://uxdesign.cc/thinking-like-a-developer-part-ii-design-the-edge-cases-fe5f21516d20" target="_blank">Additional Reading: What are edge cases?</a></li>
           </ul>
       </main>
     </div>
 
     <div class="row section">
       <aside class="col">
-        <h2>Date Object</h2>
+        <h2>Debugging</h2>
       </aside>
       <main class="col-9">
         <ul class="points">
-          <li><a href="https://www.tutorialspoint.com/es6/es6_date.htm" target="_blank">Full list of methods</a></li>
+          <li><a href="https://blog.hartleybrody.com/debugging-code-beginner/" target="_blank">10 Debugging Tips for Beginners</a></li>
         </ul>
       </main>
     </div>
@@ -149,8 +171,7 @@
       </aside>
       <main class="col-9">
         <ul class="points">
-          <li>Complete this <a href="https://codepen.io/GeekwiseAcademy/pen/jOqRgPv?editors=0010" target="_blank">Codepen*</a></li>
-          <li>*<em>If you want to save your work, you will need to create a free codepen account</em></li>
+          <li>Complete this <a href="https://codepen.io/GeekwiseAcademy/pen/MWyMyqe?editors=0010" target="_blank">Codepen</a> (scroll to the bottom of your daily challenge)</li>
         </ul>
       </main>
     </div>
