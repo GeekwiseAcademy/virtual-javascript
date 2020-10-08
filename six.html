@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Javascript for Beginners - Day Five</title>
+    <title>Javascript for Beginners - Day Six</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -31,8 +31,8 @@
               <li><a class="dropdown-item" href="two.html">Day Two</a></li>
               <li><a class="dropdown-item" href="three.html">Day Three</a></li>
               <li><a class="dropdown-item" href="four.html">Day Four</a></li>
-              <li><a class="dropdown-item active" href="five.html">Day Five</a></li>
-              <li><a class="dropdown-item" href="six.html">Day Six</a></li>
+              <li><a class="dropdown-item" href="five.html">Day Five</a></li>
+              <li><a class="dropdown-item active" href="six.html">Day Six</a></li>
               <li><hr class="dropdown-divider"></li>
               <!-- <li><a class="dropdown-item" href="final.html">Final Project</a></li> -->
             </ul>
@@ -45,7 +45,7 @@
   <div class="container padtop3">
     <div class="row">
       <div class="col text-center">
-        <h1>Day 5</h1>
+        <h1>Day 6</h1>
       </div>
     </div>
 
@@ -56,10 +56,9 @@
       <main class="col-9">
         <ul class="points">
           <li>Take Home Review</li>
-          <li>Functions</li>
+          <li>Arrays</li>
           <li>Daily Challenge</li>
-          <li>Method vs Function</li>
-          <li>Scopes</li>
+          <li>Loops</li>
           <li>Take Home Challenge</li>
         </ul>
       </main>
@@ -78,16 +77,28 @@
 
     <div class="row section">
       <aside class="col">
-        <h2>Functions</h2>
+        <h2>Arrays</h2>
       </aside>
       <main class="col-9">
         <ul class="points">
-          <li>Anonymous Functions</li>
-          <li>Parameters</li>
-          <li><code>function</code> Declaration vs Function Expressions</li>
-          <li>Calling a Function</li>
-          <li><code>return</code> Keyword</li>
-          <li>Arrow Functions</li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" target="_blank">MDN Reference: Array</a></li>
+          <ul class="nested-points">
+            <li>Properties</li>
+            <ul class="nested-points">
+              <li><code>.length</code></li>
+              <li><code>.prototype</code></li>
+            </ul>
+            <li>Methods</li>
+            <ul class="nested-points">
+              <li><code>.push()</code></li>
+              <li><code>.pop()</code></li>
+              <li><code>.concat()</code></li>
+              <li><code>.indexOf()</code></li>
+              <li><code>.slice()</code></li>
+              <li><code>.splice()</code></li>
+              <li><a href="https://www.tutorialrepublic.com/javascript-reference/javascript-array-object.php" target="_blank">...More methods</a></li>
+            </ul>
+          </ul>
         </ul>
       </main>
     </div>
@@ -99,9 +110,10 @@
       <main class="col-9">
         <ul class="points">
           <li>Create a new codepen</li>
-          <li>Write a function that accepts a number as an argument</li>
-          <li>Alert the user whether the given number is even or odd</li>
-          <li>Call your function</li>
+          <li>Create a variable called "groceryList" and assign an empty array</li>
+          <li>Prompt your user for a grocery item (string)</li>
+          <li>Push the user's grocery item to your groceryList</li>
+          <li>Console log the groceryList every time a new item is added</li>
         </ul>
       </main>
     </div>
@@ -119,23 +131,18 @@
 
     <div class="row section">
       <aside class="col">
-        <h2>Method vs Function</h2>
+        <h2>Loops</h2>
       </aside>
       <main class="col-9">
         <ul class="points">
-        <li><a href="https://www.codecademy.com/articles/fwd-js-methods-functions" target="_blank">What's the difference?</a></li>
+          <li><code>.forEach()</code></li>
+          <li><a href="https://dev.to/godcrampy/es6-for-loops-best-practices-4c86" target="_blank">For loops</a></li>
+          <li><a href="https://medium.com/@danielmjung/demystifying-the-es6-for-of-loop-9c1a0166d1c6" target="_blank">"for in" vs "for of"</a></li>
+          <li><code>while</code></li>
+          <li><code>do...while</code></li>
+          <li><code>break;</code></li>
+          <li><a href="https://www.geeksforgeeks.org/es6-loops/" target="_blank">Additional reading: ES6 Loops</a></li>
         </ul>
-      </main>
-    </div>
-
-    <div class="row section">
-      <aside class="col">
-          <h2>Scopes</h2>
-      </aside>
-      <main class="col-9">
-          <ul class="points">
-            <li><a href="https://dev.to/ale3oula/the-hor-r-o-r-scope-global-local-and-block-scope-in-js-37a1" target="_blank">Global vs Local Scope</a></li>
-          </ul>
       </main>
     </div>
 
@@ -145,13 +152,17 @@
       </aside>
       <main class="col-9">
         <ul class="points">
-          <li>Write a function that accepts a password (string)</li>
-          <li>Validate the password using the following rules:</li>
+          <li>FizzBuzz challenge</li>
           <ul class="nested-points">
-            <li>Must be 6-20 characters long</li>
-            <li>Must start with a letter</li>
+            <li>Create a new codepen</li>
+            <li>Write a function called fizzbuzz that will accept no arguments</li>
+            <li>The goal of this function is to print out all numbers from 1 to 100 but with three exceptions:</li>
+            <ul class="nested-points">
+              <li>For every number that is divisible by 3 and 5, console log "FizzBuzz"</li>
+              <li>For every number that is divisible by only 3 and not 5, console log "Fizz"</li>
+              <li>For every number that is divisible by only 5 and not 3, console log "Buzz"</li>
+            </ul>
           </ul>
-          <li>Alert the user if their password has been accepted or why their password was rejected</li>
         </ul>
       </main>
     </div>
