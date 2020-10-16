@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Javascript for Beginners - Day Seven</title>
+    <title>Javascript for Beginners - Day Eight</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -33,8 +33,8 @@
               <li><a class="dropdown-item" href="four.html">Day Four</a></li>
               <li><a class="dropdown-item" href="five.html">Day Five</a></li>
               <li><a class="dropdown-item" href="six.html">Day Six</a></li>
-              <li><a class="dropdown-item active" href="seven.html">Day Seven</a></li>
-              <li><a class="dropdown-item" href="eight.html">Day Eight</a></li>
+              <li><a class="dropdown-item" href="seven.html">Day Seven</a></li>
+              <li><a class="dropdown-item active" href="eight.html">Day Eight</a></li>
               <li><hr class="dropdown-divider"></li>
               <!-- <li><a class="dropdown-item" href="final.html">Final Project</a></li> -->
             </ul>
@@ -47,7 +47,7 @@
   <div class="container padtop3">
     <div class="row">
       <div class="col text-center">
-        <h1>Day 7</h1>
+        <h1>Day 8</h1>
       </div>
     </div>
 
@@ -58,9 +58,9 @@
       <main class="col-9">
         <ul class="points">
           <li>Take Home Review</li>
-          <li>The DOM</li>
+          <li>Objects</li>
           <li>Daily Challenge</li>
-          <li>Event Listeners</li>
+          <li>Classes</li>
           <li>Take Home Challenge</li>
         </ul>
       </main>
@@ -72,7 +72,6 @@
         </aside>
         <main class="col-9">
           <ul class="points">
-            <li><a href="https://medium.com/@endubueze00/javascript-algorithm-fizzbuzz-42129ee418e6" target="_blank">FizzBuzz Solution</a></li>
             <li>Questions?</li>
           </ul>
         </main>
@@ -80,34 +79,25 @@
 
     <div class="row section">
       <aside class="col">
-        <h2>The DOM</h2>
+        <h2>Objects</h2>
       </aside>
       <main class="col-9">
         <ul class="points">
-          <li><a href="https://www.w3schools.com/js/js_htmldom.asp" target="_blank">Document Object Model</a></li>
-          <ul class="nested-points">
-            <li>Properties</li>
+          <li>Properties</li>
             <ul class="nested-points">
-              <li>Values accessed within an HTML element (ex: get/set values)</li>
-              <li>Example properties:</li>
+              <li><code>"key: "value"</code> pair</li>
+              <li>Property Keys</li>
               <ul class="nested-points">
-                <li><code>.innerHTML</code></li>
-                <li><code>.attribute</code></li>
-                <li><code>.property</code></li>
+                <li>Unique. No spaces. Special characters allowed if surrounded by quotes</li>
               </ul>
             </ul>
-            <li>Methods</li>
             <ul class="nested-points">
-              <li>Values accessed within an HTML element (ex: get/set values)</li>
-              <li>Example methods:</li>
-              <ul class="nested-points">
-                <li><code>.getElementById()</code></li>
-                <li><code>.createElement()</code></li>
-                <li><code>.appendChild()</code></li>
-              </ul>
+              <li>Property Values</li>
+            <ul class="nested-points">
+              <li>Not unique. Can be: strings, numbers, booleans, arrays, methods (functions), etc)</li>
+              <li>Access values using dot notation</li>
             </ul>
-            <li><a href="https://www.w3schools.com/jsref/dom_obj_all.asp" target="_blank">More properties and methods</a></li>
-          </ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" target="_blank">MDN Reference: Objects</a></li>
         </ul>
       </main>
     </div>
@@ -119,11 +109,21 @@
       <main class="col-9">
         <ul class="points">
           <li>Create a new codepen</li>
-          <li>Use javascript to create and append the following to your HTML:</li>
+          <li>Congrats, you got a new dog!</li>
           <ul class="nested-points">
-            <li>Button element (with text)</li>
-            <li>Paragraph element (with text)</li>
+            <li>Create an object named "dog"</li>
           </ul>
+          <li>Name and describe your dog</li>
+          <ul class="nested-points">
+            <li>Add a property to your dog object called "name" and assign a name</li>
+            <li>Add two more properties to describe your dog. (ex: How many legs, fur color, etc)</li>
+          </ul>
+          <li>Let's teach it some tricks</li>
+          <ul class="nested-points">
+            <li>Give your dog a property called “speak” and assign a function that will alert “woof!”</li>
+            <li>Add another method to teach your dog one more trick</li>
+          </ul>
+          <li>BONUS: Display your dog object values in HTML</li>
         </ul>
       </main>
     </div>
@@ -141,12 +141,14 @@
 
     <div class="row section">
       <aside class="col">
-        <h2>Event Listeners</h2>
+        <h2>Classes</h2>
       </aside>
       <main class="col-9">
         <ul class="points">
-          <li><a href="https://www.w3schools.com/js/js_htmldom_eventlistener.asp" target="_blank">Add/remove event listeners</a></li>
-          <li><a href="https://www.w3schools.com/jsref/dom_obj_event.asp" target="_blank">Events</a></li>
+          <li><code>constructor</code> keyword</li>
+          <li><code>new</code> keyword</li>
+          <li><code>extends</code> keyword</li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes" target="_blank">MDN Reference: Classes</a></li>
         </ul>
       </main>
     </div>
@@ -157,11 +159,14 @@
       </aside>
       <main class="col-9">
         <ul class="points">
-          <li>Using your daily challenge codepen:</li>
+          <li>Create a new codepen:</li>
           <ul class="nested-points">
-            <li>Create a function that will hide or show your paragraph element when called</li>
-            <li>Add an event listener to your button</li>
-            <li>When your button is clicked, it should call your hide/show function</li>
+            <li>Let's say you're a car manufacturer and need to create many cars to build your inventory</li>
+            <li>Create a class called "car"</li>
+            <li>Add some properties like "make", "model", "year", "color", etc</li>
+            <li>Use your car class to construct 4 (or more) different cars</li>
+            <li>console log your code so you can see the results!</li>
+            <li>BONUS: Display the details for each of your cars in your HTML</li>
           </ul>
         </ul>
       </main>
