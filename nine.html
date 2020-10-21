@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Javascript for Beginners - Day Four</title>
+    <title>Javascript for Beginners - Day Nine</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -30,12 +30,12 @@
               <li><a class="dropdown-item" href="one.html">Day One</a></li>
               <li><a class="dropdown-item" href="two.html">Day Two</a></li>
               <li><a class="dropdown-item" href="three.html">Day Three</a></li>
-              <li><a class="dropdown-item active" href="four.html">Day Four</a></li>
+              <li><a class="dropdown-item" href="four.html">Day Four</a></li>
               <li><a class="dropdown-item" href="five.html">Day Five</a></li>
               <li><a class="dropdown-item" href="six.html">Day Six</a></li>
               <li><a class="dropdown-item" href="seven.html">Day Seven</a></li>
               <li><a class="dropdown-item" href="eight.html">Day Eight</a></li>
-              <li><a class="dropdown-item" href="nine.html">Day Nine</a></li>
+              <li><a class="dropdown-item active" href="nine.html">Day Nine</a></li>
               <li><hr class="dropdown-divider"></li>
               <!-- <li><a class="dropdown-item" href="final.html">Final Project</a></li> -->
             </ul>
@@ -48,7 +48,7 @@
   <div class="container padtop3">
     <div class="row">
       <div class="col text-center">
-        <h1>Day 4</h1>
+        <h1>Day 9</h1>
       </div>
     </div>
 
@@ -59,10 +59,9 @@
       <main class="col-9">
         <ul class="points">
           <li>Take Home Review</li>
-          <li>Control FLow</li>
+          <li>Forms</li>
           <li>Daily Challenge</li>
-          <li>Edge Cases</li>
-          <li>Debugging</li>
+          <li>HTTP Requests /APIs</li>
           <li>Take Home Challenge</li>
         </ul>
       </main>
@@ -81,47 +80,32 @@
 
     <div class="row section">
       <aside class="col">
-        <h2>Control Flow</h2>
+        <h2>Forms</h2>
       </aside>
       <main class="col-9">
         <ul class="points">
-          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else" target="_blank">If / Else Statements</a></li>
-          <ul class="nested-points">
-            <li>Else If</li>
-          </ul>
-          <li>Comparison Operator</li>
-          <ul class="nested-points">
-            <li><code>===</code> strict equal</li>
-            <li><code>!==</code> strict not equal</li>
-            <li><code>></code> greater than</li>
-            <li><code>>=</code> greater than or equal</li>
-            <li><code><</code> less than</li>
-            <li><code><=</code> less than or equal</li>
-          </ul>
-          <li>Truthy and Falsy</li>
-          <ul class="nested-points">
-            <li>Falsy</li>
+          <li>Attributes</li>
             <ul class="nested-points">
-              <li>False</li>
-              <li>0</li>
-              <li>Empty string ""</li>
-              <li>Null</li>
-              <li>Undefined</li>
-              <li>NaN</li>
+              <li><code>name</code></li>
+              <ul class="nested-points">
+                <li>Named forms can be accessed by their given name</li>
+                <li>Nameless forms can be accessed by <code>document.forms[index]</code></li>
+              </ul>
+              <li><code>value</code></li>
+              <li><code>action</code></li>
+              <li><a href="https://www.w3schools.com/html/html_form_input_types.asp" target="_blank">More input attributes</a></li>
             </ul>
-            <li>Truthy</li>
             <ul class="nested-points">
-              <li>All other values</li>
+              <li>Input Types</li>
+            <ul class="nested-points">
+              <li><code>text</code></li>
+              <li><code>radio</code></li>
+              <li><code>checkbox</code></li>
+              <li><code>submit</code></li>
+              <li><a href="https://www.w3schools.com/html/html_form_input_types.asp" target="_blank">More input types</a></li>
             </ul>
-          </ul>
-          <li>Logical Operators</li>
-          <ul class="nested-points">
-            <li><code>&&</code> and</li>
-            <li><code>||</code> or</li>
-            <li><code>!</code> not</li>
-          </ul>
-          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch" target="_blank">Switch Statements</a></li>
-          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator" target="_blank">Ternary Operator</a></li>
+            <li><code>.preventDefault()</code></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Sending_and_retrieving_form_data" target="_blank">MDN Reference: Form Submission</a></li>
         </ul>
       </main>
     </div>
@@ -132,7 +116,14 @@
       </aside>
       <main class="col-9">
         <ul class="points">
-          <li>Complete this <a href="https://codepen.io/GeekwiseAcademy/pen/MWyMyqe?editors=0010" target="_blank">Codepen</a></li>
+          <li>Create a new codepen</li>
+          <li>Create a contact form with a submit button</li>
+          <li>Using what you learned about DOM manipulation, create a submit function that will:</li>
+          <ul class="nested-points">
+            <li>Grab the values entered by the user</li>
+            <li>Hide the form</li>
+            <li>Display the information submitted by the user</li>
+          </ul>
         </ul>
       </main>
     </div>
@@ -150,22 +141,23 @@
 
     <div class="row section">
       <aside class="col">
-          <h2>Edge Cases</h2>
-      </aside>
-      <main class="col-9">
-          <ul class="points">
-            <li><a href="https://uxdesign.cc/thinking-like-a-developer-part-ii-design-the-edge-cases-fe5f21516d20" target="_blank">Additional Reading: What are edge cases?</a></li>
-          </ul>
-      </main>
-    </div>
-
-    <div class="row section">
-      <aside class="col">
-        <h2>Debugging</h2>
+        <h2>HTTP Requests / APIs</h2>
       </aside>
       <main class="col-9">
         <ul class="points">
-          <li><a href="https://blog.hartleybrody.com/debugging-code-beginner/" target="_blank">10 Debugging Tips for Beginners</a></li>
+          <li>HTTP Protocols:</li>
+          <ul class="nested-points">
+            <li><code>GET</code></li>
+            <li><code>PUT</code></li>
+            <li><code>PATCH</code></li>
+            <li><code>POST</code></li>
+            <li><code>DELETE</code></li>
+          </ul>
+          <li>What is an API?</li>
+          <ul class="nested-points">
+            <li>Additional Resource: <a href="https://youtu.be/OVvTv9Hy91Q" target="_blank">What is an API (Video)</a></li>
+            <li><a href="https://github.com/public-apis/public-apis" target="_blank">List of publicly accessible APIs to try out</a></li>
+          </ul>
         </ul>
       </main>
     </div>
@@ -176,7 +168,24 @@
       </aside>
       <main class="col-9">
         <ul class="points">
-          <li>Complete this <a href="https://codepen.io/GeekwiseAcademy/pen/MWyMyqe?editors=0010" target="_blank">Codepen</a> (scroll to the bottom of your daily challenge)</li>
+          <li>Begin your final project:</li>
+          <ul class="nested-points">
+            <li>Your final project will be to build a magic 8 ball app</li>
+            <li>Create a new repository named: magic8ball</li>
+            <li>Clone your repository</li>
+            <li>Add your index file, stylesheet, script file and the provided 8ball images</li>
+            <li>Main objectives:</li>
+            <ul class="nested-points">
+              <li>Create an input field for users to ask a question</li>
+              <li>Create a label for your input field telling your user to "Ask me anything!"</li>
+              <li>Create an "ask" button (this will run the function that outputs a random magic 8 ball image)</li>
+              <li>Create a div with an id of "answers" that you will insert the images into using js</li>
+              <li>Create an "ask" function that when clicked, will choose a random 8ball image and insert it into your "answers" div</li>
+              <li>Replace the input field with the user's question when displaying the answer</li>
+              <li>Style your page any way you like</li>
+              <li>Activate Github Pages for your project</li>
+            </ul>
+          </ul>
         </ul>
       </main>
     </div>
