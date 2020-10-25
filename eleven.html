@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Javascript for Beginners - Day Eight</title>
+    <title>Javascript for Beginners - Day Eleven</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -34,10 +34,10 @@
               <li><a class="dropdown-item" href="five.html">Day Five</a></li>
               <li><a class="dropdown-item" href="six.html">Day Six</a></li>
               <li><a class="dropdown-item" href="seven.html">Day Seven</a></li>
-              <li><a class="dropdown-item active" href="eight.html">Day Eight</a></li>
+              <li><a class="dropdown-item" href="eight.html">Day Eight</a></li>
               <li><a class="dropdown-item" href="nine.html">Day Nine</a></li>
               <li><a class="dropdown-item" href="ten.html">Day Ten</a></li>
-              <li><a class="dropdown-item" href="eleven.html">Day Eleven</a></li>
+              <li><a class="dropdown-item active" href="eleven.html">Day Eleven</a></li>
               <li><hr class="dropdown-divider"></li>
               <!-- <li><a class="dropdown-item" href="final.html">Final Project</a></li> -->
             </ul>
@@ -50,7 +50,7 @@
   <div class="container padtop3">
     <div class="row">
       <div class="col text-center">
-        <h1>Day 8</h1>
+        <h1>Day 11</h1>
       </div>
     </div>
 
@@ -61,9 +61,10 @@
       <main class="col-9">
         <ul class="points">
           <li>Take Home Review</li>
-          <li>Objects</li>
+          <li>Regex</li>
           <li>Daily Challenge</li>
-          <li>Classes</li>
+          <li>IIFE</li>
+          <li>Modules</li>
           <li>Take Home Challenge</li>
         </ul>
       </main>
@@ -82,25 +83,13 @@
 
     <div class="row section">
       <aside class="col">
-        <h2>Objects</h2>
+        <h2>Regex</h2>
       </aside>
       <main class="col-9">
         <ul class="points">
-          <li>Properties</li>
-            <ul class="nested-points">
-              <li><code>"key: "value"</code> pair</li>
-              <li>Property Keys</li>
-              <ul class="nested-points">
-                <li>Unique. No spaces. Special characters allowed if surrounded by quotes</li>
-              </ul>
-            </ul>
-            <ul class="nested-points">
-              <li>Property Values</li>
-            <ul class="nested-points">
-              <li>Not unique. Can be: strings, numbers, booleans, arrays, methods (functions), etc)</li>
-              <li>Access values using dot notation</li>
-            </ul>
-          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" target="_blank">MDN Reference: Objects</a></li>
+          <li><a href="https://www.w3schools.com/js/js_regexp.asp" target="blank">What is a regular expression?</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#:~:text=Regular%20expressions%20are%20patterns%20used,split()%20methods%20of%20String%20." target="_blank">MDN Reference: Regex</a></li>
+          <li>Additional Resource: <a href="https://regexr.com/">regexr.com</a></li>
         </ul>
       </main>
     </div>
@@ -111,22 +100,16 @@
       </aside>
       <main class="col-9">
         <ul class="points">
-          <li>Create a new codepen</li>
-          <li>Congrats, you got a new dog!</li>
+          <li>Using your Day 10 daily challenge codepen</li>
+          <li>Use regex to validate that your user's password contains the following:</li>
           <ul class="nested-points">
-            <li>Create an object named "dog"</li>
+            <li>Between 6-20 characters</li>
+            <li>At least one numeric digit</li>
+            <li>At least one uppercase letter</li>
+            <li>At least one lowercase letter</li>
+            <li><strong>Tip: </strong>Test your regex at <a href="https://regexr.com/">regexr.com</a></li>
+            <li><strong>Bonus: </strong>Display an error message for the user if their password is invalid</li>
           </ul>
-          <li>Name and describe your dog</li>
-          <ul class="nested-points">
-            <li>Add a property to your dog object called "name" and assign a name</li>
-            <li>Add two more properties to describe your dog. (ex: How many legs, fur color, etc)</li>
-          </ul>
-          <li>Let's teach it some tricks</li>
-          <ul class="nested-points">
-            <li>Give your dog a property called “speak” and assign a function that will alert “woof!”</li>
-            <li>Add another method to teach your dog one more trick</li>
-          </ul>
-          <li>BONUS: Display your dog object values in HTML</li>
         </ul>
       </main>
     </div>
@@ -137,21 +120,31 @@
       </aside>
       <main class="col-9">
         <ul class="points">
-        <li>Questions?</li>
+          <li>Questions?</li>
         </ul>
       </main>
     </div>
 
     <div class="row section">
       <aside class="col">
-        <h2>Classes</h2>
+        <h2>IIFE</h2>
       </aside>
       <main class="col-9">
         <ul class="points">
-          <li><code>constructor</code> keyword</li>
-          <li><code>new</code> keyword</li>
-          <li><code>extends</code> keyword</li>
-          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes" target="_blank">MDN Reference: Classes</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/IIFE" target="_blank">MDN Reference: IIFE</a></li>
+          <li><a href="https://dev.to/tapesh123/es6-block-scope-is-the-new-iife-2lg2" target="_blank">ES6 Block Scope vs IIFE</a></li>
+        </ul>
+      </main>
+    </div>
+
+    <div class="row section">
+      <aside class="col">
+        <h2>Modules</h2>
+      </aside>
+      <main class="col-9">
+        <ul class="points">
+          <li><a href="" target="_blank">Codecademy: Modules</a></li>
+          <li><a href="" target="_blank">Freecodecamp tutorial</a></li>
         </ul>
       </main>
     </div>
@@ -162,15 +155,18 @@
       </aside>
       <main class="col-9">
         <ul class="points">
-          <li>Create a new codepen:</li>
-          <ul class="nested-points">
-            <li>Let's say you're a car manufacturer and need to create many cars to build your inventory</li>
-            <li>Create a class called "car"</li>
-            <li>Add some properties like "make", "model", "year", "color", etc</li>
-            <li>Use your car class to construct 4 (or more) different cars</li>
-            <li>console log your code so you can see the results!</li>
-            <li>BONUS: Display the details for each of your cars in your HTML</li>
-          </ul>
+          <li>Complete your final project</li>
+          <li>Main objectives:</li>
+            <ul class="nested-points">
+              <li>Create an input field for users to ask a question</li>
+              <li>Create a label for your input field telling your user to "Ask me anything!"</li>
+              <li>Create an "ask" button (this will run the function that outputs a random magic 8 ball image)</li>
+              <li>Create a div with an id of "answers" that you will insert the images into using js</li>
+              <li>Create an "ask" function that when clicked, will choose a random 8ball image and insert it into your "answers" div</li>
+              <li>Replace the input field with the user's question when displaying the answer</li>
+              <li>Style your page any way you like</li>
+              <li>Activate Github Pages for your project</li>
+            </ul>
         </ul>
       </main>
     </div>
