@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Javascript for Beginners - Day Seven</title>
+    <title>Javascript for Beginners - Day Twelve</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -33,12 +33,12 @@
               <li><a class="dropdown-item" href="four.html">Day Four</a></li>
               <li><a class="dropdown-item" href="five.html">Day Five</a></li>
               <li><a class="dropdown-item" href="six.html">Day Six</a></li>
-              <li><a class="dropdown-item active" href="seven.html">Day Seven</a></li>
+              <li><a class="dropdown-item" href="seven.html">Day Seven</a></li>
               <li><a class="dropdown-item" href="eight.html">Day Eight</a></li>
               <li><a class="dropdown-item" href="nine.html">Day Nine</a></li>
               <li><a class="dropdown-item" href="ten.html">Day Ten</a></li>
               <li><a class="dropdown-item" href="eleven.html">Day Eleven</a></li>
-              <li><a class="dropdown-item" href="twelve.html">Day Twelve</a></li>
+              <li><a class="dropdown-item active" href="twelve.html">Day Twelve</a></li>
               <li><hr class="dropdown-divider"></li>
               <!-- <li><a class="dropdown-item" href="final.html">Final Project</a></li> -->
             </ul>
@@ -51,7 +51,7 @@
   <div class="container padtop3">
     <div class="row">
       <div class="col text-center">
-        <h1>Day 7</h1>
+        <h1>Day 12</h1>
       </div>
     </div>
 
@@ -61,114 +61,69 @@
       </aside>
       <main class="col-9">
         <ul class="points">
-          <li>Take Home Review</li>
-          <li>The DOM</li>
-          <li>Daily Challenge</li>
-          <li>Event Listeners</li>
-          <li>Take Home Challenge</li>
+          <li>Promises</li>
+          <li>Presentations</li>
         </ul>
       </main>
     </div>
 
     <div class="row section">
-        <aside class="col">
-          <h2>Take Home Review</h2>
-        </aside>
-        <main class="col-9">
-          <ul class="points">
-            <li><a href="https://medium.com/@endubueze00/javascript-algorithm-fizzbuzz-42129ee418e6" target="_blank">FizzBuzz Solution</a></li>
-            <li>Questions?</li>
+      <aside class="col">
+        <h2>Promises</h2>
+      </aside>
+      <main class="col-9">
+        <ul class="points">
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">MDN Reference: Promise</a></li>
+          <li>States</li>
+          <ul class="nested-points">
+            <li>Pending</li>
+            <li>Resolved</li>
+            <li>Rejected</li>
           </ul>
-        </main>
+          <li>Methods</li>
+          <ul class="nested-points">
+            <li><code>.catch()</code></li>
+            <li><code>.then()</code></li>
+            <li><code>.finally()</code></li>
+            <li><code>Promise.all()</code></li>
+          </ul>
+          <li>new Promise()</li>
+          <li>Chaining methods</li>
+          <li>Async / Await</li>
+          <ul class="nested-points">
+            <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await" target="_blank">MDN Reference: Async / Await</a></li>
+            <li>Error Handling</li>
+            <ul class="nested-points">
+              <li><code>try</code></li>
+              <li><code>catch</code></li>
+            </ul>
+            <li><strong>Additional Reading: </strong><a href="https://medium.com/javascript-in-plain-english/async-await-javascript-5038668ec6eb" target="_blank">How to use Async Await in Javascript</a></li>
+          </ul>
+        </ul>
+      </main>
+    </div>
+
+    <div class="row section">
+      <aside class="col">
+        <h2>Presentation Guidelines</h2>
+      </aside>
+      <main class="col-9">
+        <ul class="points">
+          <li>Post your final-project link in your class slack channel</li>
+          <li>Keep your presentation to 3 minutes</li>
+          <li>Share your process and experience with the code</li>
+          <li>What did you struggle with? How did you resolve it?</li>
+          <li>We will open for questions after each presentation</li>
+        </ul>
+      </main>
+    </div>
+
+    <div class="container padtop3">
+      <div class="row">
+        <div class="col text-center">
+          <span style="font-size:100px;" alt="ta da emoji">&#127881;</span>
+        </div>
       </div>
-
-    <div class="row section">
-      <aside class="col">
-        <h2>The DOM</h2>
-      </aside>
-      <main class="col-9">
-        <ul class="points">
-          <li><a href="https://www.w3schools.com/js/js_htmldom.asp" target="_blank">Document Object Model</a></li>
-          <ul class="nested-points">
-            <li>Properties</li>
-            <ul class="nested-points">
-              <li>Values accessed within an HTML element (ex: get/set values)</li>
-              <li>Example properties:</li>
-              <ul class="nested-points">
-                <li><code>.innerHTML</code></li>
-                <li><code>.attribute</code></li>
-                <li><code>.property</code></li>
-              </ul>
-            </ul>
-            <li>Methods</li>
-            <ul class="nested-points">
-              <li>Values accessed within an HTML element (ex: get/set values)</li>
-              <li>Example methods:</li>
-              <ul class="nested-points">
-                <li><code>.getElementById()</code></li>
-                <li><code>.createElement()</code></li>
-                <li><code>.appendChild()</code></li>
-              </ul>
-            </ul>
-            <li><a href="https://www.w3schools.com/jsref/dom_obj_all.asp" target="_blank">More properties and methods</a></li>
-          </ul>
-        </ul>
-      </main>
-    </div>
-
-    <div class="row section">
-      <aside class="col">
-        <h2>Daily Challenge</h2>
-      </aside>
-      <main class="col-9">
-        <ul class="points">
-          <li>Create a new codepen</li>
-          <li>Use javascript to create and append the following to your HTML:</li>
-          <ul class="nested-points">
-            <li>Button element (with text)</li>
-            <li>Paragraph element (with text)</li>
-          </ul>
-        </ul>
-      </main>
-    </div>
-
-    <div class="row section">
-      <aside class="col">
-        <h2>Daily Challenge Review</h2>
-      </aside>
-      <main class="col-9">
-        <ul class="points">
-        <li>Questions?</li>
-        </ul>
-      </main>
-    </div>
-
-    <div class="row section">
-      <aside class="col">
-        <h2>Event Listeners</h2>
-      </aside>
-      <main class="col-9">
-        <ul class="points">
-          <li><a href="https://www.w3schools.com/js/js_htmldom_eventlistener.asp" target="_blank">Add/remove event listeners</a></li>
-          <li><a href="https://www.w3schools.com/jsref/dom_obj_event.asp" target="_blank">Events</a></li>
-        </ul>
-      </main>
-    </div>
-
-    <div class="row section">
-      <aside class="col">
-        <h2>Take Home Challenge</h2>
-      </aside>
-      <main class="col-9">
-        <ul class="points">
-          <li>Using your daily challenge codepen:</li>
-          <ul class="nested-points">
-            <li>Create a function that will hide or show your paragraph element when called</li>
-            <li>Add an event listener to your button</li>
-            <li>When your button is clicked, it should call your hide/show function</li>
-          </ul>
-        </ul>
-      </main>
     </div>
   </div><!-- end Container -->
 
