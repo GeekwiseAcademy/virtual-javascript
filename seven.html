@@ -62,8 +62,10 @@
       <main class="col-9">
         <ul class="points">
           <li>Take Home Review</li>
-          <li>The DOM</li>
+          <li>Arrays</li>
+          <li>Loops</li>
           <li>Daily Challenge</li>
+          <li>The DOM</li>
           <li>Event Listeners</li>
           <li>Take Home Challenge</li>
         </ul>
@@ -71,16 +73,93 @@
     </div>
 
     <div class="row section">
-        <aside class="col">
-          <h2>Take Home Review</h2>
-        </aside>
-        <main class="col-9">
-          <ul class="points">
-            <li><a href="https://medium.com/@endubueze00/javascript-algorithm-fizzbuzz-42129ee418e6" target="_blank">FizzBuzz Solution</a></li>
-            <li>Questions?</li>
+      <aside class="col">
+        <h2>Take Home Review</h2>
+      </aside>
+      <main class="col-9">
+        <ul class="points">
+          <li>Questions?</li>
+        </ul>
+      </main>
+    </div>
+
+    <div class="row section">
+      <aside class="col">
+        <h2>Arrays</h2>
+      </aside>
+      <main class="col-9">
+        <ul class="points">
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" target="_blank">MDN Reference: Array</a></li>
+          <ul class="nested-points">
+            <li>Properties</li>
+            <ul class="nested-points">
+              <li><code>.length</code></li>
+              <li><code>.prototype</code></li>
+            </ul>
+            <li>Methods</li>
+            <ul class="nested-points">
+              <li><code>.push()</code></li>
+              <li><code>.pop()</code></li>
+              <li><code>.concat()</code></li>
+              <li><code>.indexOf()</code></li>
+              <li><code>.slice()</code></li>
+              <li><code>.splice()</code></li>
+              <li><a href="https://www.tutorialrepublic.com/javascript-reference/javascript-array-object.php" target="_blank">...More methods</a></li>
+            </ul>
           </ul>
-        </main>
-      </div>
+        </ul>
+      </main>
+    </div>
+
+    <div class="row section">
+      <aside class="col">
+        <h2>Loops</h2>
+      </aside>
+      <main class="col-9">
+        <ul class="points">
+          <li><code>.forEach()</code></li>
+          <li><a href="https://dev.to/godcrampy/es6-for-loops-best-practices-4c86" target="_blank">For loops</a></li>
+          <li><a href="https://medium.com/@danielmjung/demystifying-the-es6-for-of-loop-9c1a0166d1c6" target="_blank">"for in" vs "for of"</a></li>
+          <li><code>while</code></li>
+          <li><code>do...while</code></li>
+          <li><code>break;</code></li>
+          <li><a href="https://www.geeksforgeeks.org/es6-loops/" target="_blank">Additional reading: ES6 Loops</a></li>
+        </ul>
+      </main>
+    </div>
+
+    <div class="row section">
+      <aside class="col">
+        <h2>Daily Challenge</h2>
+      </aside>
+      <main class="col-9">
+        <ul class="points">
+          <li>FizzBuzz challenge</li>
+          <ul class="nested-points">
+            <li>Create a new codepen</li>
+            <li>Write a function called fizzbuzz that will accept no arguments</li>
+            <li>The goal of this function is to print out all numbers from 1 to 100 but with three exceptions:</li>
+            <ul class="nested-points">
+              <li>For every number that is divisible by 3 and 5, console log "FizzBuzz"</li>
+              <li>For every number that is divisible by only 3 and not 5, console log "Fizz"</li>
+              <li>For every number that is divisible by only 5 and not 3, console log "Buzz"</li>
+            </ul>
+          </ul>
+        </ul>
+      </main>
+    </div>
+
+    <div class="row section">
+      <aside class="col">
+        <h2>Daily Challenge Review</h2>
+      </aside>
+      <main class="col-9">
+        <ul class="points">
+        <li><a href="https://medium.com/@endubueze00/javascript-algorithm-fizzbuzz-42129ee418e6" target="_blank">FizzBuzz Solution</a></li>
+        <li>Questions?</li>
+        </ul>
+      </main>
+    </div>
 
     <div class="row section">
       <aside class="col">
@@ -118,33 +197,6 @@
 
     <div class="row section">
       <aside class="col">
-        <h2>Daily Challenge</h2>
-      </aside>
-      <main class="col-9">
-        <ul class="points">
-          <li>Create a new codepen</li>
-          <li>Use javascript to create and append the following to your HTML:</li>
-          <ul class="nested-points">
-            <li>Button element (with text)</li>
-            <li>Paragraph element (with text)</li>
-          </ul>
-        </ul>
-      </main>
-    </div>
-
-    <div class="row section">
-      <aside class="col">
-        <h2>Daily Challenge Review</h2>
-      </aside>
-      <main class="col-9">
-        <ul class="points">
-        <li>Questions?</li>
-        </ul>
-      </main>
-    </div>
-
-    <div class="row section">
-      <aside class="col">
         <h2>Event Listeners</h2>
       </aside>
       <main class="col-9">
@@ -161,7 +213,13 @@
       </aside>
       <main class="col-9">
         <ul class="points">
-          <li>Using your daily challenge codepen:</li>
+          <li>Create a new pen in codepen</li>
+          <li>Use javascript to create and append the following to your HTML:</li>
+          <ul class="nested-points">
+            <li>Button element (with text)</li>
+            <li>Paragraph element (with text)</li>
+          </ul>
+          <li>Now add the following functionality:</li>
           <ul class="nested-points">
             <li>Create a function that will hide or show your paragraph element when called</li>
             <li>Add an event listener to your button</li>
