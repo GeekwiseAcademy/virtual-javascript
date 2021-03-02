@@ -127,8 +127,6 @@ header {
 
 .logo {
     margin-left: 5em;
-    background-color: #F7DA4D;
-    border-radius: 50%;
     height: 100px;
     width: 100px;
     animation: color-swirl 2s ease-in-out;
@@ -260,11 +258,9 @@ aside h2 {
 
 @keyframes color-swirl {
     from {
-        background-color: #FFFFFF;
         transform: rotate(0deg);
     }
     to {
-        background-color: #F7DA4D;
         transform: rotate(360deg);
     }
 }
