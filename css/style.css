@@ -36,12 +36,38 @@ p {
 }
 
 .points {
-    list-style: none;
     font-size: 1.25em;
+}
+
+ul.points {
+    list-style: none;
 }
 
 ol {
   font-size: 1.2em;
+}
+
+ol.points {
+    list-style: none;
+    counter-reset: step;
+}
+
+ol.points > li {
+margin-bottom: 10px;
+}
+
+
+ol.points > li::before {
+    background: #1e2b4c;
+    color: #fff;
+    display: inline-block;
+    content: counter(step);
+    counter-increment: step;
+    width: 45px;
+    height: 45px;
+    border-radius: 23px;
+    text-align: center;
+    margin-right: 10px;
 }
 
 .nested-points {
