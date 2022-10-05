@@ -36,12 +36,8 @@ body, html {
     bottom: 0;
 }
 
-html {
-    background-color: #F7DA4D;
-}
-
-main, aside {
-    font-size: 1.5em;
+section, aside {
+    font-size: 1.5rem;
 }
 
 a {
@@ -189,6 +185,7 @@ header {
 
 .logo {
     margin-left: 5em;
+    border-radius: 50%;
     height: 100px;
     width: 100px;
     animation: color-swirl 2s ease-in-out;
@@ -202,6 +199,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.logo a img {
+    background: #fff;
 }
 
 .nav {
@@ -246,7 +247,7 @@ aside h2 {
     animation: from-top 1.5s ease-in-out;
 }
 
-.section div.col-9 {
+section div.col-9 {
     animation: from-right 1.5s ease-in-out;
 }
 
@@ -283,11 +284,6 @@ details {
 .fade-6 {
   animation: fade-in 6.5s 14s ease-in-out infinite;
   opacity: 0;
-}
-
-/* TAKE HOME */
-.take-home ul li a {
-    font-weight: bold;
 }
 
 /* ANIMATIONS */
