@@ -189,8 +189,8 @@ header {
   margin-bottom: 1.5em;
 }
 
-.section main, .section aside{
-    margin-top: 2em;
+.section > div, .section aside{
+    margin-top: 2rem;
 }
 
 aside {
@@ -206,7 +206,7 @@ aside h2 {
     animation: from-top 1.5s ease-in-out;
 }
 
-.section main {
+.section div.col-9 {
     animation: from-right 1.5s ease-in-out;
 }
 
@@ -220,11 +220,11 @@ aside h2 {
   opacity: 0;
 }
 .fade-2 {
-  animation: fade-in 6.5s 4s ease-in-out infinite;
+  animation: fade-in 6.5s ease-in-out infinite;
   opacity: 0;
 }
 .fade-3 {
-  animation: fade-in 6.5s 8s ease-in-out infinite;
+  animation: fade-in 6.5s ease-in-out infinite;
   opacity: 0;
 }
 .fade-4 {
