@@ -79,8 +79,8 @@
       </aside>
       <div class="col-9">
         <ul class="points">
-          <li>Merge your take-home branch into master</li>
-          <li>Make sure your master branch is up-to-date locally and in Github</li>
+          <li>Merge your <code>take-home</code> branch into <code>main</code></li>
+          <li>Make sure your main branch is up-to-date locally and in Github</li>
           <li>Questions?</li>
         </ul>
       </div>
@@ -105,44 +105,72 @@
       </aside>
       <div class="col-9">
         <ul class="points">
-          <li><a href="https://javascript.info/types" target="_blank">Primitive Data Types</a></li>
-          <ul class="nested-points">
-            <li>Strings</li>
-              <ul class="nested-points">
-                <li>Always wrapped in single quotes or double quotes</li>
-                <li>.length property</li>
-                <li>Concatenation</li>
-                <li>Interpolation</li>
+          <li><a href="https://javascript.info/types" target="_blank">Primitive Data Types</a> (7 of them, think of them as categories)
+            <ol class="nested-points">
+              <li><strong>String</strong>
                 <ul class="nested-points">
-                  <li><a href="https://developers.google.com/web/updates/2015/01/ES6-Template-Strings" target="_blank">Template Literals</a></li>
+                  <li>characters enclosed in single quotes <code>''</code>, double quotes <code>""</code>, or backticks <code>``</code>
+                    <ul>
+                      <li>i.e. <code>""</code> (<em>empty string</em>), <code>"welcome"</code>, <code>'no one belongs here more than you'</code>, <code>`good evening!`</code>, <code>`How was your day???`</code>, <code>"😃😎"</code>, <code>'777 lucky'</code>, etc.</li>
+                    </ul>
+                  </li>
+                  <li><code>.length</code> property</li>
+                  <li>Concatenation (combining)</li>
+                  <li>Interpolation</li>
+                  <ul class="nested-points">
+                    <li><a href="https://developers.google.com/web/updates/2015/01/ES6-Template-Strings" target="_blank">Template Literals</a></li>
+                  </ul>
+                </ul></li>
+              <li><strong>Number</strong>
+                <ul class="nested-points">
+                  <li>Used for positive or negative integers and decimal values i.e. <code>0</code>, <code>345</code>, <code>-23.4</code>, <code>3.14</code>, <code>42e-1</code> (scientific notation)</li>
+                  <li>Different base representations:
+                    <ul>
+                      <li>binary: begin with 0b i.e. <code>0b110</code></li>
+                      <li>hexadecimal: begin with 0x i.e. <code>0x11</code></li>
+                      <li>octal: begin with 0o i.e. <code>0o11</code></li>
+                    </ul>
+
+                  </li>
+                  <li><code>Infinity</code></li>
+                  <li><code>NaN</code> (Not a Number)</li>
                 </ul>
-              </ul>
-            <li>Numbers</li>
-              <ul class="nested-points">
-                <li>Used for integers and decimal values</li>
-                <li>Infinity</li>
-                <li>NaN</li>
-              </ul>
-            <li>Boolean</li>
-              <ul class="nested-points">
-                <li>True</li>
-                <li>False</li>
-              </ul>
-            <li>Undefined</li>
-              <ul class="nested-points">
-                <li>No value assigned</li>
-              </ul>
-            <li><a href="https://javascript.info/bigint" target="_blank">BigInt</a></li>
-              <ul class="nested-points">
-                <li>Used for integers of longer length than the number data type</li>
-                <li>Created by adding an "n" to the end of an integer</li>
-              </ul>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/symbol" target="_blank">Symbol</a></li>
-              <ul class="nested-points">
-                <li>Creates anonymous and unique values</li>
-              </ul>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof" target="_blank">typeof</a></li>
-          </ul>
+              </li>
+              <li><strong>Boolean</strong>
+                <ul class="nested-points">
+                  <li><code>true</code> - on state, yes</li>
+                  <li><code>false</code> - off state, no</li>
+                </ul>
+              </li>
+              <li><strong>Undefined</strong>
+                <ul class="nested-points">
+                  <li><code>undefined</code> no value assigned</li>
+                </ul>
+              </li>
+              <li><strong>Null</strong>
+                <ul class="nested-points">
+                  <li><code>null</code> "absence of value"</li>
+                </ul>
+              </li>
+              <li><a href="https://javascript.info/bigint" target="_blank"><strong>BigInt</strong></a> (not commonly used)
+                <ul class="nested-points">
+                  <li>Used to represent very large integers</li>
+                  <li>BigInt was added since Number types can't accurately do arithmetic with huge numbers</li>
+                  <li>Larger than <code>Number.MAX_SAFE_INTEGER</code> and smaller than <code>Number.MIN_SAFE_INTEGER</code></li>
+                  <li>Denoted by suffixing a number with an "n" i.e. <code>9007199254740999n</code> to the end of an integer</li>
+                </ul>
+              </li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/symbol" target="_blank"><strong>Symbol</strong></a> (not commonly used)
+                <ul class="nested-points">
+                  <li>Creates a unique value, no two symbols are ever the same</li>
+                  <li><code>Symbol()</code> or <code>Symbol("favorite");</code></li>
+                </ul>
+              </li>
+            </ol>
+          </li>
+          <li><strong>Objects</strong><br>
+            We are able to put together primitive data types to compose larger data structures called objects. There many different type of objects such as Objects, Arrays, and Functions. More about these in future days.
+          </li>
         </ul>
       </div>
     </section>
@@ -155,11 +183,10 @@
         <ul class="points">
           <li>In your js-practice repository:</li>
           <ol class="nested-points points">
-              <li>Create a new branch named <strong>"day-2"</strong></li>
-              <li>Using the <code>.length</code> property, console log the number of letters in <strong>“Supercalifragilisticexpialidocious”</strong></li>
-              <li>Console log any number</li>
+              <li>Create a new branch named <code>day-2</code></li>
+              <li>Using the <code>.length</code> property, console log the total number of letters in the string <code>"Supercalifragilisticexpialidocious"</code></li>
+              <li>Console log any Number</li>
               <li>Console log a BigInt</li>
-              <li>Hint: Use typeof to confirm your number and BigInt values</li>
               <li>git add, commit, and push to your <code>day-2</code> branch</li>
           </ol>
         </ul>
@@ -182,12 +209,17 @@
           <h2>Variables</h2>
       </aside>
       <div class="col-9">
+
           <ul class="points">
-            <li><code>var</code> - used in previous JS versions</li>
-            <li><code>let</code> - declared values can be reassigned</li>
-            <li><code>const</code> - declared values can not be reassigned</li>
-            <li><a href="https://www.dummies.com/web-design-development/javascript/naming-javascript-variables/">Naming Javascript Variables</a></li>
-            <li><a href="https://www.freecodecamp.org/news/what-is-variable-hoisting-differentiating-between-var-let-and-const-in-es6-f1a70bb43d/" target="_blank">Hoisting</a></li>
+            <li>🚫 <code>var</code> - variables are re-assignable, re-declarable, <a href="https://www.freecodecamp.org/news/what-is-variable-hoisting-differentiating-between-var-let-and-const-in-es6-f1a70bb43d/" target="_blank">hoist</a>, and are <strong>function scoped</strong>. The original way of declaring variables. Avoid using var, today it's considered bad practice.</li>
+            <li>✅ <code>const</code> - variables are not re-assignable and must be assigned a value at declaration, and are <strong>block scoped</strong></li>
+            <li>✅ <code>let</code> -  variables are re-assignable and are <strong>block scoped</strong></li>
+          </ul>
+          <br>
+
+          <ul class="points">
+            <li>Variables in JavaScript are <strong>dynamically typed</strong>, meaning you can switch out the data type they hold with any other data type.</li>
+            <li>Naming variables have rules that need to be followed: <a href="https://www.dummies.com/web-design-development/javascript/naming-javascript-variables/" target="_blank">Naming Javascript Variables</a></li>
           </ul>
       </div>
     </section>
@@ -198,22 +230,47 @@
       </aside>
       <div class="col-9">
         <ul class="points">
-            <li>Assignment</li>
+            <li>Assignment
+              <ul class="nested-points">
+                <li><code>=</code> assignment</li>
+                <li><code>+=</code> addition assignment</li>
+                <li><code>-=</code> subtraction assignment</li>
+                <li><code>*=</code> multiplication assignment</li>
+                <li><code>/=</code> division assignment</li>
+              </ul>
+            </li>
+            <li>Arithmetic
+              <ul class="nested-points">
+                <li><code>+</code> addition</li>
+                <li><code>-</code> subtraction</li>
+                <li><code>*</code> multiplication</li>
+                <li><code>/</code> division</li>
+                <li><code>%</code> modulo (remainder division)</li>
+              </ul>
+            </li>
+
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof" target="_blank">typeof</a> - tells us the <strong>type of</strong> the data
+            <br>
+            Some examples:
             <ul class="nested-points">
-              <li><code>=</code> assignment</li>
-              <li><code>+=</code> addition assignment</li>
-              <li><code>-=</code> subtraction assignment</li>
-              <li><code>*=</code> multiplication assignment</li>
-              <li><code>/=</code> division assignment</li>
+              <li><code>typeof "Bitwise Industries";</code></li>
+              <li><code>typeof -2009;</code></li>
+              <li><code>typeof NaN;</code></li>
+              <li><code>typeof false;</code></li>
+              <li><code>typeof undefined;</code></li>
+              <li><code>typeof null;</code> (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof#typeof_null" target="_blank">huh?!</a>)</li>
+              <li><code>typeof 9007199254740999n;</code></li>
+              <li><code>typeof Symbol("unicorn");</code></li>
             </ul>
-            <li>Arithmetic</li>
+
+            More on the following in future days:
             <ul class="nested-points">
-              <li><code>+</code> addition</li>
-              <li><code>-</code> subtraction</li>
-              <li><code>*</code> multiplication</li>
-              <li><code>/</code> division</li>
-              <li><code>%</code> modulo</li>
+              <li><code>typeof [];</code></li>
+              <li><code>typeof {};</code></li>
+              <li><code>typeof function () {};</code></li>
             </ul>
+          </li>
+
         </ul>
       </div>
     </section>
